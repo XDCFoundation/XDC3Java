@@ -17,7 +17,7 @@ Now we have to add Module Dependency in the application project builg.gradle fil
 
 put “implementation project(":XDC3Java")“ in dependencies
 
-Now we can access the methods of XDC3Android library in Android app
+Now we can access the methods of XDC3Java library in Any
 
 ### Accessing methods of XRC20 in our project
 ```
