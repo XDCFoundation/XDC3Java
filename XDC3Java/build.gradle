@@ -1,0 +1,69 @@
+
+
+
+
+buildscript {
+    repositories
+            {
+                jcenter()
+                google()
+            }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath 'com.github.dcendents:android-maven-plugin:1.0'
+    }
+
+}
+plugins {
+    id 'java-library'
+    id "org.web3j" version "4.8.4"
+
+}
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Example',
+                'Implementation-Version': 0.1,
+                'Main-Class': 'com.XDCJava.XDC20Client'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+
+
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+dependencies {
+
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    implementation 'org.web3j:core:4.8.4'
+
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    testImplementation 'junit:junit:4.12'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
+
+    test {
+        useJUnitPlatform()
+    }
+
+
+}
+
+
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+
+}
