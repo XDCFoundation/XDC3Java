@@ -65,8 +65,7 @@ public class XDC20Client {
                 //Show Error
                 return false;
             }
-        } catch (
-                Exception e) {
+        } catch (Exception e) {
             //Show Error
             return false;
         }
@@ -99,24 +98,16 @@ public class XDC20Client {
             walletData.setPublickeyKey(publickeyKey);
             walletData.setSeedPhrase(seedPhrase);
 
-
             createAccountCallback.success(walletData);
-
-
-
-
-
             /*String seedPhrase = walletName.getMnemonic();
 +
 +            Credentials restoreCredentials = WalletUtils.loadBip39Credentials("1234567890",
 +                    seedPhrase);
 +            ECKeyPair restoredPrivateKey = restoreCredentials.getEcKeyPair();
 +            String restoredAccountAddress = restoreCredentials.getAddress();*/
-        } catch (IOException | CipherException e) {
-
+        } catch (IOException | CipherException e)
             e.printStackTrace();
             createAccountCallback.failure(e.getMessage());
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -126,21 +117,16 @@ public class XDC20Client {
     public void importWallet(String seedPhrase, String Password, CreateAccountCallback createAccountCallback) {
 
         try {
-
-
             Credentials restoreCredentials = WalletUtils.loadBip39Credentials(Password,
                     seedPhrase);
             ECKeyPair restoredPrivateKey = restoreCredentials.getEcKeyPair();
             String restoredAccountAddress = restoreCredentials.getAddress();
-
-
             WalletData walletData = new WalletData();
             restoredAccountAddress = restoredAccountAddress.replace("0x", "xdc");
             walletData.setAccountAddress(restoredAccountAddress);
             walletData.setPrivateKey(restoredPrivateKey.getPrivateKey().toString(16));
             walletData.setPublickeyKey(restoredPrivateKey.getPublicKey().toString(16));
             walletData.setSeedPhrase(seedPhrase);
-
             createAccountCallback.success(walletData);
         } catch (Exception e) {
             e.printStackTrace();
@@ -166,18 +152,14 @@ public class XDC20Client {
                 }
             } catch (Exception e) {
                 return e.getMessage();
-
             }
-
         } else {
             return "Please check your Connection";
         }
-
     }
 
 
     public void getTokenoinfo(String token_address, TokenDetailCallback tokenDetailCallback) {
-
 
         if (isWeb3jConnected()) {
             ClientTransactionManager transactionManager = new ClientTransactionManager(web3,
@@ -192,12 +174,9 @@ public class XDC20Client {
             }
 
         } else {
-
             //Show Error
             tokenDetailCallback.failure("Connection has been failed");
         }
-
-
     }
 
 
@@ -222,13 +201,9 @@ public class XDC20Client {
                 e.printStackTrace();
                 return e.getMessage();
             }
-
-
         } else {
             return "check your connection";
         }
-
-
     }
 
     /**
@@ -245,9 +220,6 @@ public class XDC20Client {
                     owner_address);
             XRC20 javaToken = com.XDCJava.contracts.src.main.java.XRC20.load(token_address, web3, transactionManager, new DefaultGasProvider());
 
-
-
-
             try {
                 BigInteger balance = javaToken.balanceOf(owner_address).send();
                 balance = converHexToDecimal(balance);
@@ -256,13 +228,9 @@ public class XDC20Client {
                 e.printStackTrace();
                 return e.getMessage();
             }
-
-
         } else {
             return "check your connection";
         }
-
-
     }
 
 
@@ -277,19 +245,14 @@ public class XDC20Client {
 
             try {
                 EthGetBalance balance =   web3.ethGetBalance(owner_address,DefaultBlockParameterName.LATEST).send();
-
                 return String.valueOf(converHexToDecimal(balance.getBalance()));
             } catch (IOException e) {
                 e.printStackTrace();
                 return String.valueOf(e.getMessage());
             }
-
-
         } else {
             return "check your connection";
         }
-
-
     }
 
     public void getinfo(XRC20 javaToken, String token_address, TokenDetailCallback tokenDetailCallback) {
@@ -457,12 +420,8 @@ public class XDC20Client {
                 return "Failed";
             }
         } else {
-
             return "Failed";
-
         }
-
-
     }
 
 
@@ -734,6 +693,4 @@ public class XDC20Client {
         return hexValue.divide(hexvalue);
 
     }
-
-
 }

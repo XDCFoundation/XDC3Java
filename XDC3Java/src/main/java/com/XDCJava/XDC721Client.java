@@ -75,7 +75,6 @@ public class XDC721Client {
 
     public void getTokenoinfo(String tokenAddress, Token721DetailCallback tokenDetailCallback) {
 
-
         if (isWeb3jConnected()) {
             ClientTransactionManager transactionManager = new ClientTransactionManager(web3,
                     tokenAddress);
@@ -87,9 +86,7 @@ public class XDC721Client {
                 exception.printStackTrace();
                 tokenDetailCallback.failure(exception.getMessage());
             }
-
         } else {
-
             //Show Error
             tokenDetailCallback.failure("Connection has been failed");
         }
@@ -99,8 +96,6 @@ public class XDC721Client {
 
     @SuppressWarnings("NewApi")
     public void deploy_contract(String privatekey, Token721DetailCallback tokenDetailCallback) {
-
-
         if (isWeb3jConnected()) {
             Credentials credentials = Credentials.create(privatekey);
             try {
@@ -138,7 +133,6 @@ public class XDC721Client {
                     e.printStackTrace();
                 }
 
-
                 if (hash != null) {
 
                     EthGetTransactionReceipt transactionReceipt =
@@ -151,21 +145,14 @@ public class XDC721Client {
                         // try again
                         tokenDetailCallback.failure("failed");
                     }
-
-
                 } else {
                     tokenDetailCallback.failure("failed");
                 }
-
-
             } catch (Exception e) {
                 e.printStackTrace();
                 tokenDetailCallback.failure(e.getMessage());
             }
-
-
         } else {
-
             //Show Error
             tokenDetailCallback.failure("Connection has been failed");
         }
@@ -237,8 +224,6 @@ public class XDC721Client {
             try {
                 XRC721 javaToken1 = XRC721.load(tokenAddress, web3, transactionManager, new DefaultGasProvider());
                 BigInteger balance = javaToken1.balanceOf(ownerAddress).send();
-
-
                 return String.valueOf(balance);
             } catch (Exception exception) {
                 exception.printStackTrace();
@@ -250,8 +235,6 @@ public class XDC721Client {
             //Show Error
             return "Connection has been failed";
         }
-
-
     }
 
 
@@ -260,8 +243,6 @@ public class XDC721Client {
     /// @return A count of valid NFTs tracked by this contract, where each one of
     ///  them has an assigned and queryable owner not equal to the zero address
     public String gettotalSupply(String tokenAddress) {
-
-
         if (isWeb3jConnected()) {
             ClientTransactionManager transactionManager = new ClientTransactionManager(web3,
                     tokenAddress);
@@ -324,8 +305,6 @@ public class XDC721Client {
             try {
                 XRC721Enumerable javaToken1 = XRC721Enumerable.load(tokenAddress, web3, transactionManager, new DefaultGasProvider());
                 BigInteger token = javaToken1.tokenOfOwnerByIndex(ownerAddress, new BigInteger(index)).send();
-
-
                 return String.valueOf(token);
             } catch (Exception exception) {
                 exception.printStackTrace();
@@ -494,8 +473,6 @@ public class XDC721Client {
     /// @param tokenAddress NFT address
     /// @return True if `_operator` is an approved operator for `_owner`, false otherwise
     public boolean isApprovedForAll(String tokenAddress, String ownerAddress, String OperatorAddress) {
-
-
         if (isWeb3jConnected()) {
             ClientTransactionManager transactionManager = new ClientTransactionManager(web3,
                     tokenAddress);
@@ -511,7 +488,6 @@ public class XDC721Client {
             }
 
         } else {
-
             //Show Error
             return false;
         }
@@ -695,5 +671,4 @@ public class XDC721Client {
             return "Failed";
         }
     }
-
 }
