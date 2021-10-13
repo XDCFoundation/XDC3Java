@@ -13,7 +13,7 @@ go to file menu — project structure — modules — click ‘+’ — select i
 
 you can see the  folder in your android project
 
-Now we have to add Module Dependency in the application project builg.gradle file
+Now we have to add Module Dependency in the application project build.gradle file
 
 put “implementation project(":XDC3Java")“ in dependencies
 
