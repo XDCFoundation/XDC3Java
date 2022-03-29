@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_writemethod"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+    <TextView
+        android:id="@+id/textView104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="Write events of NFT"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/txt_approve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/edit_text_border1"
+        android:ems="10"
+        android:text="@string/approve"
+        android:padding="@dimen/margin_10"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txt_setapprovalforall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/edit_text_border1"
+        android:ems="10"
+        android:text="@string/setApprovalForAll"
+        android:padding="@dimen/margin_10"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txt_transferfrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/edit_text_border1"
+        android:ems="10"
+        android:text="@string/transfer_from"
+        android:padding="@dimen/margin_10"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txt_safetransferfrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/edit_text_border1"
+        android:ems="10"
+        android:text="@string/safe_transferf"
+        android:padding="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:textSize="18dp" />
+
+
+
+
+
+   <!-- <Button
+        android:id="@+id/button17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_input1"
+        android:backgroundTint="@color/highlight"
+        android:fontFamily="@font/saira_semibold"
+        android:padding="@dimen/margin_15"
+        android:paddingStart="10dp"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="@color/button" />
+-->
+
+</LinearLayout>

@@ -14,9 +14,10 @@ import org.web3j.tx.TransactionManager;
 import org.web3j.tx.gas.ContractGasProvider;
 
 
+
 public class XRC721Enumerable extends Contract
  {
-    private static final String BINARY = "Bin file was not provided";
+    private static final String BINARY = "0x60556023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a72315820f256544127bf2cd708f7eb50daaaaaa2534cfc6c7a7c45df350c41f134b0371964736f6c63430005110032";
 
     public static final String FUNC_TOTALSUPPLY = "totalSupply";
 
@@ -42,7 +43,24 @@ public class XRC721Enumerable extends Contract
         super(BINARY, contractAddress, web3j, transactionManager, contractGasProvider);
     }
 
-    public RemoteCall<BigInteger> totalSupply() {
+     public XRC721Enumerable(String binary, String contractAddress, Web3j web3j, Credentials credentials, BigInteger gasPrice, BigInteger gasLimit) {
+         super(binary,contractAddress, web3j, credentials, gasPrice, gasLimit);
+     }
+
+     public XRC721Enumerable(String binary, String contractAddress, Web3j web3j, Credentials credentials, ContractGasProvider contractGasProvider) {
+         super(binary,contractAddress, web3j, credentials,contractGasProvider);
+     }
+
+     public XRC721Enumerable(String binary, String contractAddress, Web3j web3j, TransactionManager transactionManager, ContractGasProvider contractGasProvider) {
+         super(binary,contractAddress, web3j, transactionManager,contractGasProvider);
+     }
+
+     public XRC721Enumerable(String binary, String contractAddress, Web3j web3j,TransactionManager transactionManager, BigInteger gasPrice, BigInteger gasLimit) {
+         super(binary,contractAddress, web3j, transactionManager, gasPrice, gasLimit);
+     }
+
+
+     public RemoteCall<BigInteger> totalSupply() {
         final Function function = new Function(FUNC_TOTALSUPPLY, 
                 Arrays.<Type>asList(), 
                 Arrays.<TypeReference<?>>asList(new TypeReference<Uint256>() {}));
@@ -74,11 +92,13 @@ public class XRC721Enumerable extends Contract
         return new XRC721Enumerable(contractAddress, web3j, transactionManager, gasPrice, gasLimit);
     }
 
-    public static XRC721Enumerable load(String contractAddress, Web3j web3j, Credentials credentials, ContractGasProvider contractGasProvider) {
-        return new XRC721Enumerable(contractAddress, web3j, credentials, contractGasProvider);
-    }
+     public static XRC721Enumerable load(String contractAddress, Web3j web3j, Credentials credentials, ContractGasProvider contractGasProvider) {
+         return new XRC721Enumerable(contractAddress, web3j, credentials, contractGasProvider);
+     }
 
-    public static XRC721Enumerable load(String contractAddress, Web3j web3j, TransactionManager transactionManager, ContractGasProvider contractGasProvider) {
-        return new XRC721Enumerable(contractAddress, web3j, transactionManager, contractGasProvider);
-    }
+     public static XRC721Enumerable load(String contractAddress, Web3j web3j, TransactionManager transactionManager, ContractGasProvider contractGasProvider) {
+         return new XRC721Enumerable(contractAddress, web3j, transactionManager, contractGasProvider);
+     }
+
+
 }

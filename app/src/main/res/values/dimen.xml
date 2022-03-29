@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="toolbarheight">60dp</dimen>
+    <dimen name="image_45">45dp</dimen>
+
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_17">17dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+
+    <dimen name="text_18">18dp</dimen>
+    <dimen name="text_12">12dp</dimen>
+
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Example.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbarheight"
+                android:background="@color/background"
+                android:fitsSystemWindows="true">
+
+                <ImageView
+                    android:id="@+id/back_txdc"
+                    android:layout_width="@dimen/image_45"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_17"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/decrease_allowance"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+            <TextView
+                android:id="@+id/text_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_5"
+                android:gravity="center"
+                android:background="@drawable/edit_text_border1"
+               android:layout_margin="@dimen/margin_20"
+                android:text="@string/decreaseallownce_20"
+                android:textColor="@color/header"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/margin_50"
+                android:text="@string/spender_add"
+                android:textColor="@color/header"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/receiver_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_border"
+                android:padding="15dp"
+                android:text="@string/final_spendar_address"
+
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Amount"
+                android:textColor="@color/header"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_border"
+                android:padding="15dp"
+                android:text=""
+
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/send_approve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/background"
+                android:padding="15dp"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_transaction_hash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+
+                android:textColor="@color/background"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

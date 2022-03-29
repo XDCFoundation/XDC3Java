@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Example.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbarheight"
+                android:background="@color/background"
+                android:fitsSystemWindows="true">
+
+                <ImageView
+                    android:layout_width="@dimen/image_45"
+                    android:layout_height="match_parent"
+                    android:id="@+id/back_txdc"
+                    android:padding="@dimen/padding_17"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/transfer"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/private_key"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/private_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/black"
+
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="@string/enter_private_key_here"
+                    android:padding="15dp"
+                    android:text="@string/final_private_key"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/sender_address"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/sender_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text_border"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+
+                    android:text="@string/final_token_owner"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="20dp"
+                android:id="@+id/text_detail"
+                android:gravity="center"
+                android:padding="@dimen/padding_5"
+                android:background="@drawable/edit_text_border1"
+                android:text="@string/transfer_20"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/margin_50"
+                android:text="To Address"
+                android:textStyle="bold"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/receiver_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_border"
+                android:padding="15dp"
+                android:textColor="@color/black"
+
+                android:text="@string/final_spendar_address"
+                android:textColorHint="@color/hint"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Amount"
+                android:textStyle="bold"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_border"
+                android:padding="15dp"
+                android:textColor="@color/black"
+
+                android:text=""
+                android:textColorHint="@color/hint"
+                android:textSize="16sp" />
+
+
+
+
+            <Button
+                android:id="@+id/send_approve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/background"
+                android:padding="15dp"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:textIsSelectable="true"
+
+                android:id="@+id/text_transaction_hash"
+                android:textColor="@color/background"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

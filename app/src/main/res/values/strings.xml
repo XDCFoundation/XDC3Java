@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">XDC Example</string>
+    <string name="xdc3_android">XDC.Android</string>
+    <string name="enter_xdc_address_here">Enter XDC Address Here</string>
+    <string name="or">or</string>
+    <string name="submit">Submit</string>
+    <string name="todo">TODO</string>
+    <string name="xdc_address">XDC Address</string>
+    <string name="xdc_address_entered">xdc_address_entered</string>
+    <string name="name">Name:</string>
+    <string name="symbol">Symbol:</string>
+    <string name="decimals">Decimals:</string>
+    <string name="total_supply">Total Supply</string>
+    <string name="balance_off">Balance of</string>
+    <string name="transfer">Transfer</string>
+    <string name="allowance">Allowance</string>
+    <string name="approve">Approve</string>
+    <string name="transfer_from">Transfer From</string>
+    <string name="increase_allowance">Increase Allowance</string>
+    <string name="decrease_allowance">Decrease Allowance</string>
+    <string name="select_an_address">Select an address</string>
+    <string name="select_from_list">Select from list</string>
+    <string name="create">Create</string>
+    <string name="enter_xdc_password">Enter Password</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="new_account">New Account</string>
+    <string name="create_wallet">Create Wallet</string>
+    <string name="send">Send</string>
+    <string name="enter_private_key_here">Enter Private Key here</string>
+    <string name="receiver_address">Receiver Address:</string>
+    <string name="sender_address">Sender Address:</string>
+    <string name="private_key">Private Key:</string>
+    <string name="value">Value:</string>
+    <string name="error_empty">This field cannot be empty</string>
+
+    <string name="import_wallet">Import Wallet</string>
+    <string name="safe_transferf">SafeTransferFrom</string>
+    <string name="wallet">Wallet</string>
+    <string name="recovery_phrase">Recovery Phrase</string>
+    <string name="seedphrase">toe page hill swarm exist original author tower truth photo casino survey</string>
+    <string name="token">XDC20 Token</string>
+    <string name="nfttoken">NFT Token</string>
+    <string name="addtoken">Add Token</string>
+    <string name="addntoken">Add NFT</string>
+    <string name="tokenadd">Token Address</string>
+    <string name="tokensym">Token Symbol</string>
+    <string name="tokendec">Token Decimal</string>
+    <string name="tokenblc">Token balance</string>
+    <string name="add">Add</string>
+    <string name="trans_xdc">Transfer XDC</string>
+
+    <string name="aprove_20">Sets <b>amount</b> as the <b>allowance</b> of spender over the caller’s tokens.</string>
+    <string name="increaseallownce_20">Automatically increases the <b>allowance</b> <br/>granted to <b>spender</b> by the <b>caller</b>.</string>
+    <string name="decreaseallownce_20">Automatically decreases the <b>allowance</b> <br/>granted to <b>spender</b> by the <b>caller</b>.</string>
+    <string name="transfer_20">Emitted when value tokens are moved from one account <b>(from)</b> to another <b>(to)</b>.</string>
+    <string name="transferfrom_20">Moves amount tokens from <b>sender</b> to <b>recipient</b> <br/>using the allowance mechanism.  <b>amount</b> is then deducted from the<br/> caller’s allowance.</string>
+
+    <string name="allowance_20"> Returns the remaining number of tokens that <b>spender</b><br/> will be allowed to spend on behalf of <b>owner</b><br/> through transferFrom. This is zero by default.</string>
+    <string name="balaceof_20">Returns the amount of tokens owned by account.</string>
+    <string name="tid">Token Id</string>
+    <string name="tindex">Token Index</string>
+    <string name="turi">TokenURI</string>
+    <string name="townerbyindex">Token Of Owner ByIndex</string>
+    <string name="tbyindex">Token By Index</string>
+    <string name="tbalanceof">balanceOf</string>
+    <string name="ownerof">OwnerOf</string>
+    <string name="getApproved">getApproved</string>
+    <string name="isapproved">Is Approved ForAll</string>
+    <string name="supportinterface">supportInterface</string>
+
+    <string name="approve_721">Change or reaffirm the <b>approved address</b> for an NFT</string>
+    <string name="setaproval_721">Enable or disable <b>approval</b> for a <br/>third party <b>("operator")</b> to manage</string>
+    <string name="transfer_721">Transfer <b>ownership</b> of an NFT</string>
+    <string name="safetransfer_721">Transfers the <b>ownership</b> of an NFT <br/>from one address to another address</string>
+    <string name="turi_721"> A distinct Uniform Resource Identifier <b>(URI)</b> for a given asset</string>
+    <string name="tokenOfOwnerByIndex_721">  Enumerate NFTs assigned to an <b>owner</b>,<br/>return The <b>token identifier</b> for the `index`th NFT</string>
+    <string name="tokenByIndex_721">Enumerate valid NFTs,return The <b>token identifier</b><br/>for the `index`th NFT</string>
+    <string name="balanceof_721">Count all NFTs assigned to an <b>owner</b></string>
+    <string name="ownerof_721">Find the <b>owner</b> of an NFT</string>
+    <string name="getapproved_721">Get the <b>approved</b> address for a <b>single NFT</b></string>
+    <string name="isApprovedForAll_721">Query if an address is an authorized <b>operator</b> for another address</string>
+    <string name="support_721">Query if a contract implements an interface</string>
+    <string name="total_721">Count NFTs tracked by this contract</string>
+
+
+
+    <string name="nft_test">0xDa2B731d88b556e1Dbad396a187D5949D9f4e472</string>
+    <string name="nft_test_tokenid">131</string>
+    <string name="nft_2ndaddress">0x8b462b7c7142c5db99dedf6b8b4406b947ed93fd</string>
+    <string name="nft_1staddress">0xbbcea945d74b659ec37afd49af746d9ccda1530b</string>
+    <string name="nft_1stprivatekey">100ff21dae8e8cf5a3ed42ba0a0e33d33b0e76be884f1cb1be642a425264311e</string>
+    <string name="nft_2ndprivatekey">0x613f995586518c59e239658cd418d705c81e7afd4a51f65b5c56cb29f3c86afd</string>
+
+
+
+    <string name="test_add">0x046550ba1d12a302e78996ce7c5d54cf66be0e9c</string>
+    <string name="gasprice">4000004</string>
+    <string name="gaslimit">50005</string>
+    <string name="value_transfer">1000000000000000000</string>
+    <string name="privatekeytransfer">0xd596a485cebc97afc2f114286599ff5ac7d62ee907b9543a290a994c6b1de9fb</string>
+    <string name="sender_add">0xff55cb8c656a4e94b4151df9bfb88cc069ceb3e1</string>
+    <string name="receiver_add">0x63b32225813a3f2b877d77094d25f7ce6653b4b5</string>
+
+
+
+    <string name="enter_key">Enter Private key</string>
+    <string name="spender">Spender : </string>
+    <string name="owner">Owner : </string>
+    <string name="spender_add">Spender Address</string>
+    <string name="owner_add">Owner Address</string>
+    <string name="check_address">Check Address</string>
+
+
+    <string name="final_token">0xba9d6a36fbc194f5d1aa48a2892ae4bdf6939cb9</string>
+    <string name="final_token_owner">0x6ffe09f9302a857fcb122296e3ab3bb80c45cbcd</string>
+    <string name="final_private_key">0x07d2fb9a1f3a912000bbf9215ee0815a969b1d49e7e4c5ec94600ae2dfcfa4ce</string>
+    <string name="final_spendar_address">0xbbcea945d74b659ec37afd49af746d9ccda1530b</string>
+    <string name="final_spendar_privatekey">0x8a32103448a851b2fed3e95d2b4fbaa5e564f3b8cc42eac0d3be15a96311f355</string>
+    <string name="final_to_address_tfrom">0xedb472070566e072f3bdaa50cfa076e772135f33</string>
+
+
+   <!-- <string name="final721_token">0x301815025bd43513ec36b6c6159ebaa8dff5e36d</string>
+    <string name="final721_tokenOwner">0xd7813e7cfdf83d6fa3469d7411b52a50ed2b867f</string>
+    <string name="final721_owner_privatekey">0x8a32103448a851b2fed3e95d2b4fbaa5e564f3b8cc42eac0d3be15a96311f355</string>
+    <string name="final721_spendar_address">0x6ffe09f9302a857fcb122296e3ab3bb80c45cbcd</string>
+    <string name="final721_spendar_privatekey">0x07d2fb9a1f3a912000bbf9215ee0815a969b1d49e7e4c5ec94600ae2dfcfa4ce</string>
+    <string name="final721_receiver_address">0xedb472070566e072f3bdaa50cfa076e772135f33</string>
+    <string name="final721_tokenId">21</string>
+    <string name="final721_interfaceId">0x80ac58cd</string>
+    <string name="xdc_721address">XDC 721 Token Address</string>
+    <string name="final_tokenUri">0x613fb5f43ae37a60d5f6683d921613c53d75d85d</string>-->
+
+
+   <!-- <string name="final721_token">0xc246e82fb67bdfcf6fc9859c66c613730f8650c4</string>
+    <string name="final721_tokenOwner">0x79dbbbe40993253aa18e930a39d3636b15866725</string>
+    <string name="final721_owner_privatekey">0x03098465d0a7a39e05ca8ab431789507c1d576a2da1de6934964e33ea8d6986a</string>
+    <string name="final721_spendar_address">0x7af2f691d78c51d0f0368a3c367634c9d76cfe7d</string>
+    <string name="final721_spendar_privatekey">0x78e5eff6026eeeee03401909c51a1b3bd3b2071dd333632bb4d54c279dc5f1ea</string>
+    <string name="final721_tokenId">27</string>
+    <string name="final721_interfaceId">0x80ac58cd</string>
+    <string name="xdc_721address">XDC 721 Token Address</string>
+    <string name="final_tokenUri">0x613fb5f43ae37a60d5f6683d921613c53d75d85d</string>-->
+
+
+    <string name="final721_token">0xf6b4102b25756a33a90f8f192c74e53d22a9628e</string>
+    <string name="final721_tokenOwner">0x517b6be05e5c50df6876906909c23ad130476cc7</string>
+    <string name="final721_owner_privatekey">0x7415687b87e1f1bcf55b26e0ddb086f9eb1d31cdc2059a296ce05de51b043258</string>
+    <string name="final721_spendar_address">0x7af2f691d78c51d0f0368a3c367634c9d76cfe7d</string>
+    <string name="final721_spendar_privatekey">0x78e5eff6026eeeee03401909c51a1b3bd3b2071dd333632bb4d54c279dc5f1ea</string>
+    <string name="final721_tokenId">19</string>
+    <string name="final721_interfaceId">0x80ac58cd</string>
+    <string name="xdc_721address">XDC 721 Token Address</string>
+    <string name="final_tokenUri">0x613fb5f43ae37a60d5f6683d921613c53d75d85d</string>
+
+
+    <!--token: 0xc246e82fb67bdfcf6fc9859c66c613730f8650c4
+    previos owner : 0x79dbbbe40993253aa18e930a39d3636b15866725
+    private key previous key : 0x03098465d0a7a39e05ca8ab431789507c1d576a2da1de6934964e33ea8d6986a
+    new owner : 0x7af2f691d78c51d0f0368a3c367634c9d76cfe7d
+    private key new Owner : 0x78e5eff6026eeeee03401909c51a1b3bd3b2071dd333632bb4d54c279dc5f1ea
+    id : 27-->
+
+
+
+
+    <string name="getOwnerof">OwnerOf</string>
+    <string name="getapproved">GetApproved</string>
+    <string name="isapprovedForAll">isApprovedForAll</string>
+    <string name="support_interface">Supports Interface</string>
+    <string name="setApprovalForAll">SetApprovalForAll</string>
+
+
+    <string name="final721_token_read">0xf6b4102b25756a33a90f8f192c74e53d22a9628e</string>
+    <string name="final721_tokenOwner_read">0x517b6be05e5c50df6876906909c23ad130476cc7</string>
+    <string name="final721_owner_privatekey_read">0x7415687b87e1f1bcf55b26e0ddb086f9eb1d31cdc2059a296ce05de51b043258</string>
+    <string name="final721_tokenId_read">19</string>
+    <string name="final721_token_Index">0</string>
+
+
+</resources>

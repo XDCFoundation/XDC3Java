@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+}
+
+android
+        {
+
+           /* configurations {
+                all*.exclude module: 'bcprov-jdk15on'
+            }*/
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.XDC.Example"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    signingConfigs {
+        release {
+            storeFile file('XDC.jks')
+            storePassword 'leeway321'
+            keyAlias = 'xdc'
+            keyPassword 'leeway321'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+  //  implementation files('libs\\XDC3Java.jar')
+
+
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation project(':XDC3Java')
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+
+
+}
+

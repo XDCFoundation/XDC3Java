@@ -1,0 +1,1983 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Example.Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/background">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="28dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_back" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_xdc_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:text="@string/xdc3_android"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/xdc_721address"
+            android:textColor="@color/header"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/xdc_address_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_border"
+            android:padding="15dp"
+            android:textColor="@color/background"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edt_privatekey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight=".3"
+                android:background="@drawable/edit_text_border"
+                android:hint="@string/enter_key"
+                android:padding="15dp"
+                android:text="5724b3006f227d6a8efac9d9310beec7874cf0dcdc12e5d0c4890d2ba497b9c6"
+                android:textColor="@color/background"
+                android:textColorHint="@color/hint"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".7"
+                android:backgroundTint="@color/background"
+                android:gravity="center"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:text="@string/check_address"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="11dp"
+                android:layout_weight="0.65"
+                android:text="Sender Address : "
+                android:textColor="@color/header"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_contract_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="11dp"
+                android:layout_weight="0.35"
+                android:background="@drawable/edit_text_border"
+                android:maxLines="2"
+                android:padding="7dp"
+                android:text=""
+                android:textColor="@color/background"
+                android:textIsSelectable="true"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_border1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="@string/name"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/name_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_toRightOf="@+id/name"
+                    android:text="-"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/name_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="@string/symbol"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/symbol_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_toRightOf="@+id/symbol"
+                    android:text="-"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/tokenuri_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/decimals"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/token_uri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/decimals_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token Uri:"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/token_Uri_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/decimals_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/total_supply"
+                        android:text="-"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tokenadd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token Address"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_token_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="@string/spender_add"
+                        android:padding="5dp"
+                        android:text="@string/final721_token"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tokenuri_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token id"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_token_uri_tokenid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="@string/spender_add"
+                        android:padding="5dp"
+                        android:text="@string/final721_tokenId"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/submit_tokenuri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".7"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/total_supply_devider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/total_supply"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="@string/total_supply"
+                        android:textColor="@color/header"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/total_supply_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:text=""
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/total_supply_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="token Address"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_total_supply_token"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="@string/spender_add"
+                        android:padding="5dp"
+                        android:text="@string/final721_token_read"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_total_supply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".7"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/total_supply_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/total_supply"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/balance_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="@string/balance_off"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/balance_off_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:text=""
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/balance_spenfer_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="@string/spender"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_balance_spender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="@string/spender_add"
+                        android:padding="5dp"
+                        android:text="@string/final721_tokenOwner"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_balanceof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".7"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/balance_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/total_supply"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tokenbyindex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token by Index"
+                        android:textStyle="bold"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tokenbyindex_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:text=""
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tokenbyindex__add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token Address"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/tokenbyindex_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="token address"
+                        android:padding="5dp"
+                        android:text="@string/final721_token_read"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tokenby_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token index"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_tokenby_index_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="index"
+                        android:padding="5dp"
+                        android:text="@string/final721_token_Index"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_tokenby_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".7"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/tokenindex_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/total_supply"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tokenownerbyindex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token Owner by Index"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tokenownerbyindex_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:text=""
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token Address"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_tokenbyownerindex_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="token address"
+                        android:padding="5dp"
+                        android:text="@string/final721_token_read"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Owner Address"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_owner_index_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="token address"
+                        android:padding="5dp"
+                        android:text="@string/final721_tokenOwner_read"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token index"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_tokenownerby_index_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="index"
+                        android:padding="5dp"
+                        android:text="@string/final721_token_Index"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_tokenownerby_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".7"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/ownery_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/total_supply"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/owneroff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="@string/getOwnerof"
+                        android:textStyle="bold"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/ownerof_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:text=""
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/token_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token id"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_tokenid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="@string/spender_add"
+                        android:padding="5dp"
+                        android:text="@string/final721_tokenId"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_ownerof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".7"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/support_interface_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/total_supply"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/supporitn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="11dp"
+                        android:text="@string/support_interface"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/is_Supoortinterface"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:text=""
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/interface_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="InterfaceID"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_interfaceID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="interface Id"
+                        android:padding="5dp"
+                        android:text="@string/final721_interfaceId"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_interface"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".7"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/getappov"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/total_supply"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/getappo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="@string/getapproved"
+                        android:textColor="@color/header"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/getapproved_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:text=""
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/apptoken_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="Token id"
+                        android:textColor="@color/header"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_getapprove_tokenid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_supply_divider"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="11dp"
+                        android:layout_toRightOf="@+id/balance_off"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="@string/spender_add"
+                        android:padding="5dp"
+                        android:text="@string/final721_tokenId"
+                        android:textColor="@color/header"
+                        android:textColorHint="@color/hint"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_getapproved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".7"
+                    android:backgroundTint="@color/background"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/edit_text_border1"
+            android:orientation="vertical"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_border1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/approve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/transfer_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="@string/approve"
+                    android:textColor="@color/header"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/approve_trasactonhash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/allowance"
+                    android:hint="trasaction Hash"
+                    android:padding="5dp"
+                    android:textColor="@color/background"
+                    android:textColorHint="@color/hint"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_weight=".75"
+                    android:text="@string/receiver_address"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_approve_spender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/balance_off"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="@string/spender_add"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:singleLine="true"
+                    android:text="@string/final721_spendar_address"
+                    android:textColor="@color/header"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/approve_token_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="Token id"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_approve_tokenid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_toRightOf="@+id/balance_off"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="@string/spender_add"
+                    android:padding="5dp"
+                    android:text="@string/final721_tokenId"
+                    android:textColor="@color/header"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/submit_approve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".7"
+                android:backgroundTint="@color/background"
+                android:gravity="center"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_border1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/approveforall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/transfer_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="@string/isapprovedForAll"
+                    android:textColor="@color/header"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/isapprovedForAll_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/allowance"
+                    android:hint="true/false"
+                    android:padding="5dp"
+                    android:textColor="@color/background"
+                    android:textColorHint="@color/hint"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_weight=".75"
+                    android:text="@string/receiver_address"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_isapproveforall_spender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/balance_off"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="@string/spender_add"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:singleLine="true"
+                    android:text="@string/final721_spendar_address"
+                    android:textColor="@color/header"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/submit_isapprovedforall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".7"
+                android:backgroundTint="@color/background"
+                android:gravity="center"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_border1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/setapproveforall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/transfer_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="@string/setApprovalForAll"
+                    android:textColor="@color/header"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/setapprovedForAll_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/allowance"
+                    android:hint="true/false"
+                    android:padding="5dp"
+                    android:textColor="@color/background"
+                    android:textColorHint="@color/hint"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_weight=".75"
+                    android:text="@string/receiver_address"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_setapproveforall_spender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/balance_off"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="@string/spender_add"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:singleLine="true"
+                    android:text="@string/final721_spendar_address"
+                    android:textColor="@color/header"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/set_App_boolean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="Boolean"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_setapprobe_booean"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_toRightOf="@+id/balance_off"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="true/false"
+                    android:padding="5dp"
+                    android:text="true"
+                    android:textColor="@color/header"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/submit_setapprovedforall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".7"
+                android:backgroundTint="@color/background"
+                android:gravity="center"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_border1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/safeTransferFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/transfer_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="SafeTransferFrom"
+                    android:textColor="@color/header"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/safeTransferFrom_trasactonhash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/allowance"
+                    android:hint="trasaction Hash"
+                    android:padding="5dp"
+                    android:textColor="@color/background"
+                    android:textColorHint="@color/hint"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_weight=".75"
+                    android:text="@string/receiver_address"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_safeTransferFrom_spender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/balance_off"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="@string/spender_add"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:singleLine="true"
+                    android:text="@string/final721_spendar_address"
+                    android:textColor="@color/header"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/safetr_token_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="Token id"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_safetrans_tokenid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_toRightOf="@+id/balance_off"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="@string/spender_add"
+                    android:padding="5dp"
+                    android:text="@string/final721_tokenId"
+                    android:textColor="@color/header"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/submit_safetrans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".7"
+                android:backgroundTint="@color/background"
+                android:gravity="center"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_border1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/transferFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/transfer_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="TransferFrom"
+                    android:textColor="@color/header"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/transferFrom_trasactonhash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/allowance"
+                    android:hint="trasaction Hash"
+                    android:padding="5dp"
+                    android:textColor="@color/background"
+                    android:textColorHint="@color/hint"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_weight=".75"
+                    android:text="@string/receiver_address"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_transferFrom_spender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/balance_off"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="@string/spender_add"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:singleLine="true"
+                    android:text="@string/final721_spendar_address"
+                    android:textColor="@color/header"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tr_token_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="Token id"
+                    android:textColor="@color/header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_trans_tokenid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_supply_divider"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_toRightOf="@+id/balance_off"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="@string/spender_add"
+                    android:padding="5dp"
+                    android:text="@string/final721_tokenId"
+                    android:textColor="@color/header"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/submit_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".7"
+                android:backgroundTint="@color/background"
+                android:gravity="center"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

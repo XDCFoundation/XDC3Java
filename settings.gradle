@@ -1,0 +1,3 @@
+include ':XDC3Java'
+include ':app'
+rootProject.name = "XDC Example"

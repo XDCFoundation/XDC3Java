@@ -23,7 +23,7 @@ import org.web3j.tx.gas.ContractGasProvider;
  * <p>Generated with web3j version 4.1.1.
  */
 public class XRC721Metadata extends Contract {
-    private static final String BINARY = "Bin file was not provided";
+    private static final String BINARY = "0x60556023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a72315820f256544127bf2cd708f7eb50daaaaaa2534cfc6c7a7c45df350c41f134b0371964736f6c63430005110032";
 
     public static final String FUNC_NAME = "name";
 
@@ -49,6 +49,24 @@ public class XRC721Metadata extends Contract {
         super(BINARY, contractAddress, web3j, transactionManager, contractGasProvider);
     }
 
+    @Deprecated
+    public static XRC721Metadata load(String contractAddress, Web3j web3j, Credentials credentials, BigInteger gasPrice, BigInteger gasLimit) {
+        return new XRC721Metadata(contractAddress, web3j, credentials, gasPrice, gasLimit);
+    }
+
+    @Deprecated
+    public static XRC721Metadata load(String contractAddress, Web3j web3j, TransactionManager transactionManager, BigInteger gasPrice, BigInteger gasLimit) {
+        return new XRC721Metadata(contractAddress, web3j, transactionManager, gasPrice, gasLimit);
+    }
+
+    public static XRC721Metadata load(String contractAddress, Web3j web3j, Credentials credentials, ContractGasProvider contractGasProvider) {
+        return new XRC721Metadata(contractAddress, web3j, credentials, contractGasProvider);
+    }
+
+    public static XRC721Metadata load(String contractAddress, Web3j web3j, TransactionManager transactionManager, ContractGasProvider contractGasProvider) {
+        return new XRC721Metadata(contractAddress, web3j, transactionManager, contractGasProvider);
+    }
+
     public RemoteCall<String> name() {
         final Function function = new Function(FUNC_NAME, 
                 Arrays.<Type>asList(), 
@@ -70,21 +88,5 @@ public class XRC721Metadata extends Contract {
         return executeRemoteCallSingleValueReturn(function, String.class);
     }
 
-    @Deprecated
-    public static XRC721Metadata load(String contractAddress, Web3j web3j, Credentials credentials, BigInteger gasPrice, BigInteger gasLimit) {
-        return new XRC721Metadata(contractAddress, web3j, credentials, gasPrice, gasLimit);
-    }
 
-    @Deprecated
-    public static XRC721Metadata load(String contractAddress, Web3j web3j, TransactionManager transactionManager, BigInteger gasPrice, BigInteger gasLimit) {
-        return new XRC721Metadata(contractAddress, web3j, transactionManager, gasPrice, gasLimit);
-    }
-
-    public static XRC721Metadata load(String contractAddress, Web3j web3j, Credentials credentials, ContractGasProvider contractGasProvider) {
-        return new XRC721Metadata(contractAddress, web3j, credentials, contractGasProvider);
-    }
-
-    public static XRC721Metadata load(String contractAddress, Web3j web3j, TransactionManager transactionManager, ContractGasProvider contractGasProvider) {
-        return new XRC721Metadata(contractAddress, web3j, transactionManager, contractGasProvider);
-    }
 }

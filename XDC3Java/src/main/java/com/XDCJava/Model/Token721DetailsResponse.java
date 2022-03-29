@@ -30,4 +30,12 @@ public class Token721DetailsResponse implements Serializable
     public void setTokenAddress(String param) {
         this.tokenAddress = param;
     }
+
+    private String balance;
+    public String getBalance() {
+        return balance;
+    }
+    public void setBalance(String param) {
+        this.balance = param;
+    }
 }
